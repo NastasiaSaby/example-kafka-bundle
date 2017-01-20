@@ -48,7 +48,7 @@ m6_web_kafka:
            brokers:
                - '127.0.0.1'
                - '10.05.05.19'
-           log_level: '3'
+           log_level: 3
            topics:
                eventUsers:
                    configuration:
@@ -63,6 +63,6 @@ m6_web_kafka:
                 enable.auto.commit: '0'
             topicConfiguration:
                 auto.offset.reset: 'smallest'
-            timeout_consuming_queue: '120000'
+            timeout_consuming_queue: '500'
             topics:
                 - eventUsers
