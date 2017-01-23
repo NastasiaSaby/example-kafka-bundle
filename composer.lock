@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "72f5613196d3790eaa0e772ef8867531",
-    "content-hash": "6fe8cf6015b99ce8f8d20e10562175f5",
+    "hash": "e736c919fbb57b0b0a52c77c69b20c37",
+    "content-hash": "199464a85fbade1fa42f673994e392bb",
     "packages": [
         {
             "name": "atoum/stubs",
@@ -1004,16 +1004,16 @@
         },
         {
             "name": "m6web/kafka-bundle",
-            "version": "v0.9.1",
+            "version": "dev-fix/extension-configuration",
             "source": {
                 "type": "git",
                 "url": "https://github.com/M6Web/KafkaBundle.git",
-                "reference": "e095ae5e439ad1bdd27577a5ebae882240230edb"
+                "reference": "9aa176bc86909407fcd2d1a55922fc23f64df596"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/M6Web/KafkaBundle/zipball/e095ae5e439ad1bdd27577a5ebae882240230edb",
-                "reference": "e095ae5e439ad1bdd27577a5ebae882240230edb",
+                "url": "https://api.github.com/repos/M6Web/KafkaBundle/zipball/9aa176bc86909407fcd2d1a55922fc23f64df596",
+                "reference": "9aa176bc86909407fcd2d1a55922fc23f64df596",
                 "shasum": ""
             },
             "require": {
@@ -1054,7 +1054,7 @@
                 "bundle",
                 "kafka"
             ],
-            "time": "2016-12-21 08:27:00"
+            "time": "2017-01-23 12:08:58"
         },
         {
             "name": "monolog/monolog",
@@ -2268,7 +2268,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "m6web/kafka-bundle": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
