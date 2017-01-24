@@ -42,7 +42,12 @@ class UserEventConsumerCommand extends DaemonCommand
     {
         $message = $this->consumer->consume();
         if ($message->err == RD_KAFKA_RESP_ERR_NO_ERROR) {
-            var_dump($message);
+            $output->writeln(
+                'topic : ' . $message->topic_name
+                . ' - partition : ' . $message->partition
+                . ' - offset : ' . $message->offset
+                . ' - payload : ' . $message->payload
+            );
 
             return;
         }

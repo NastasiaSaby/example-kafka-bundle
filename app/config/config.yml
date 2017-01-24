@@ -52,8 +52,8 @@ m6_web_kafka:
            topics:
                eventUsers:
                    configuration:
-                       auto.commit.interval.ms: '1000'
-                   strategy_partition: '2'
+                       auto.commit.interval.ms: 1000
+                   strategy_partition: 2
 
     consumers:
         eventUsers:
@@ -63,6 +63,6 @@ m6_web_kafka:
                 enable.auto.commit: '0'
             topicConfiguration:
                 auto.offset.reset: 'smallest'
-            timeout_consuming_queue: '500'
+            timeout_consuming_queue: 500
             topics:
                 - eventUsers
